@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:staging": "APP_ENV=staging node src/server.js",
+    "start:preprod": "APP_ENV=preprod node src/server.js",
+    "start:prod": "APP_ENV=prod node src/server.js",
+    "dev": "APP_ENV=staging nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
